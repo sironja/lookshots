@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<title>Save Tag API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="savetag" action="SaveTag.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Check Save tag</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+    <td><select name="action"><option value="Add" selected="selected">Add</option><option value="Update">Update</option></select></td>
+  </tr>
+  <tr>
+    <td>tag Id</td>
+    <td><input type="text" name="tag_id" /> Fill it when you choose action update.</td>
+  </tr>
+  <!--<tr>
+    <td>tag on type</td>
+    <td><input type="text" name="tag_on_type" /></td>
+  </tr> -->
+  <tr>
+    <td>tag on</td>
+    <td><input type="text" name="tag_on" /> Media Id</td>
+  </tr>
+    <tr>
+    <td>Brand Id</td>
+    <td><input type="text" name="brand_id" /> </td>
+  </tr>
+    <tr>
+    <td>Retailer Id</td>
+    <td><input type="text" name="retailer_id" /> </td>
+  </tr>
+  </tr>
+    <tr>
+    <td>Item Id</td>
+    <td><input type="text" name="item_id" /> </td>
+  </tr>  
+  <tr>
+    <td>tag Position(x,y)</td>
+    <td><input type="text" name="tag_position" /></td>
+  </tr>
+  <tr>
+    <td>tag by</td>
+    <td><input type="text" name="tag_by" />user id of User who is doing tag</td>
+  </tr>
+    <td>is_active</td>
+    <td><select name="is_active"><option value="1" selected="selected">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td>deleted</td>
+    <td><select name="deleted"><option value="0" selected="selected">No</option><option value="1">Yes</option></select></td>
+  </tr>
+  <tr>
+    <td>tag Create Time</td>
+    <td><input type="text" name="tag_created_time" /></td>
+  </tr>
+  <tr>
+    <td>tag Update Time</td>
+    <td><input type="text" name="tag_updated_time" /></td>
+  </tr>
+  <tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr>  
+  <tr>
+    <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+
+  </tr>
+</table>
+</form>
+</body>
+</html>

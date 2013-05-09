@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<title>Authenticate User API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="authenticateuser" action="AuthenticateUser.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Check Authenticate User</th>
+  </tr>
+    <td>User Name</td>
+    <td><input type="text" name="username" /></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td><input type="text" name="password" /></td>
+  </tr>
+  <tr>
+    <tr>
+    <td>Device Id</td>
+    <td><input type="text" name="udid"  required/></td>
+  </tr>
+  <tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr>
+  <tr>
+      <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+  </tr>
+  
+</table>
+</form>
+</body>
+</html>

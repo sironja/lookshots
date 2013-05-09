@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>Save Comments API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="saveComments" action="SaveComments.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Check Save Comments</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+    <td><select name="operation"><option value="Add" selected="selected">Add</option><option value="Update">Update</option></select></td>
+  </tr>
+  <tr>
+    <td>Comment Id</td>
+    <td><input type="text" name="comment_id" /> Fill it when you choose action update.</td>
+  </tr>
+  <!--<tr>
+    <td>Comment On Typt</td>
+    <td><select name="comment_on_type"><option value="feed" selected="selected">Feed</option><option value="profile">Profile</option></select></td>
+  </tr> -->
+  <tr>
+    <td>Comment On</td>
+    <td><input type="text" name="comment_on" /></td>
+  </tr>
+  <tr>
+    <td>Commnent Text</td>
+    <td><textarea name="comment_text" cols="40" rows="5"></textarea></td>
+  </tr>
+  <tr>
+    <td>comment_by</td>
+    <td><input type="text" name="comment_by" /></td>
+  </tr>
+  <tr>
+    <td>is_active</td>
+    <td><select name="is_active"><option value="1" selected="selected">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td>deleted</td>
+    <td><select name="deleted"><option value="0">No</option><option value="1">Yes</option></select></td>
+  </tr>
+  <tr>
+    <td>Comment Create Time</td>
+    <td><input type="datetime" name="comment_created_time" /></td>
+  </tr>
+  <tr>
+    <td>Comment Update Time</td>
+    <td><input type="datetime" name="comment_updated_time" /></td>
+  </tr>
+  <!--<tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr>-->  
+  <tr>
+    <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+
+  </tr>
+</table>
+</form>
+</body>
+</html>

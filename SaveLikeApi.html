@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<title>Save Like API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="savelike" action="SaveLike.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Check Like</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+    <td><select name="action"><option value="Add" selected="selected">Add</option><option value="Update">Update</option></select></td>
+  </tr>
+  <tr>
+    <td>Like Id</td>
+    <td><input type="text" name="like_id" /> Fill it when you choose action update.</td>
+  </tr>
+ <!-- <tr>
+    <td>Like On type </td>
+    <td><input type="text" name="like_on_type" /></td>
+  </tr> -->
+  <tr>
+    <td>Like On</td>
+    <td><input type="text" name="like_on" /></td>
+  </tr>
+  <tr>
+    <td>Like by</td>
+    <td><input type="text" name="like_by" /></td>
+  </tr>
+    <td>is_active</td>
+    <td><select name="is_active"><option value="1" selected="selected">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td>deleted</td>
+    <td><select name="action"><option value="0" selected="selected">No</option><option value="1">Yes</option></select></td>
+  </tr>
+  <tr>
+    <td>Like Create Time</td>
+    <td><input type="text" name="like_created_time" /></td>
+  </tr>
+  <tr>
+    <td>Like Update Time</td>
+    <td><input type="text" name="like_updated_time" /></td>
+  </tr>
+  <tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr>  
+  <tr>
+    <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

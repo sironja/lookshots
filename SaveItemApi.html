@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<title>Save item API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="saveitem" action="SaveItem.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Test Check Save item</th>
+  </tr>
+  <tr>
+    <td>Operation</td>
+    <td><select name="operation">
+    		<option value="Add" selected="selected">Add</option>
+		    <option value="Update">Update</option>
+        </select>
+    </td>
+  </tr>
+  <tr>
+    <td>item Id</td>
+    <td><input type="text" name="item_id" /> Fill it when you choose action update.</td>
+  </tr>
+  <tr>
+    <td>item Name</td>
+    <td><input type="text" name="item_name" /></td>
+  </tr>
+  <tr>
+    <td>item Photo</td>
+    <td><textarea name="item_photo" cols="40" rows="5"></textarea></td>
+  </tr>
+  <tr>
+    <td>is_active</td>
+    <td><select name="is_active"><option value="1" selected="selected">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td>deleted</td>
+    <td><select name="deleted"><option value="0" selected="selected">No</option><option value="1">Yes</option></select></td>
+  </tr>
+  <tr>
+    <td>item Create Time</td>
+    <td><input type="text" name="item_created_time" /></td>
+  </tr>
+  <tr>
+    <td>item Update Time</td>
+    <td><input type="text" name="item_updated_time" /></td>
+  </tr>
+  <tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

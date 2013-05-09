@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<title>Save Media API</title>
+</head>
+<body bgcolor="#CCCCCC">
+<form name="savemedia" action="SaveMedia.php" method="post">
+<table width="600" border="1" cellspacing="3" cellpadding="2" align="center">
+  <tr>
+    <th colspan="2">Check Save media</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+    <td><select name="action"><option value="Add" selected="selected">Add</option><option value="Update">Update</option></select></td>
+  </tr>
+  <tr>
+    <td>Media Id</td>
+    <td><input type="text" name="media_id" /> Fill it when you choose action update.</td>
+  </tr>
+  <tr>
+    <td>Media Title</td>
+    <td><input type="text" name="media_title" /></td>
+  </tr> 
+    <tr>
+    <td>Media Owner</td>
+    <td><input type="text" name="media_owner" /></td>
+  </tr> 
+   	 <tr>
+    	<td>Media Tags</td>
+    	<td><textarea name="media_tags" cols="40" rows="5"></textarea>
+item_id,Brand_id,Retailer_id,tag_position,tag_by | item_id,Brand_id,Retailer_id,tag_position,tag_by <br>
+			tag_position = pt1Xpt2  
+    	</td>
+   	 </tr>
+
+  <tr>
+    <td>Media Image</td>
+    <td><textarea name="media_image" cols="40" rows="5"></textarea></td>
+  </tr>
+   <tr>
+    <td>Image Type</td>
+    <td><select name="image_type"><option value="everyday" selected="selected">everyday</option><option value="event">event</option>
+    <option value="evening">evening</option><option value="vacation">vacation</option><option value="work">work</option>
+    <option value="active">active</option></select></td>
+  </tr>
+  <tr>
+    <td>is_active</td>
+    <td><select name="is_active"><option value="1" selected="selected">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td>deleted</td>
+    <td><select name="deleted"><option value="0" selected="selected">No</option><option value="1">Yes</option></select></td>
+  </tr>
+  <tr>
+    <td>Media Create Time</td>
+    <td><input type="text" name="media_created_time" /></td>
+  </tr>
+  <tr>
+    <td>Media Update Time</td>
+    <td><input type="text" name="media_updated_time" /></td>
+  </tr>
+  <!--<tr>
+    <td>Output Format</td>
+    <td><select name="format"><option value="xml" selected="selected">xml</option><option value="nxml">nxml</option><option value="json">json</option></select></td>
+  </tr> -->  
+  <tr>
+    <td colspan="2" align="right"><input type="submit" name="submit" value="submit"/></td>
+
+  </tr>
+</table>
+</form>
+</body>
+</html>
